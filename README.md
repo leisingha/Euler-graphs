@@ -13,7 +13,8 @@ The program prompts the user for a commandline input for a filename which includ
 * Followed by one line for each row of the adjacency matrix of the graph: 
     - in each row the elements are separated by blanks.
 
-**Example:**
+**Example:**    
+
 D 3  
 0 1 0   
 1 0 0    
