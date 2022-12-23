@@ -13,4 +13,4 @@ The program instantitates graph objects from simple text files that contain dire
 
 ## Test.py
 
-* Does the actual Testing 🧪
+* Does the actual Testing 🧪 using two functions isValidEuler() and TestOnGraph()
