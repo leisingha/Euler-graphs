@@ -14,11 +14,10 @@ The program prompts the user for a commandline input for a filename which includ
     - in each row the elements are separated by blanks.
 
 **Example:**
-D 3\n
-0 1 0\n
-1 0 0\n
-0 0 0\n
-
+D 3  
+0 1 0   
+1 0 0    
+0 0 0    
 
 ## Test.py
 
