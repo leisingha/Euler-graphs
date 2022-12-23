@@ -14,10 +14,10 @@ The program prompts the user for a commandline input for a filename which includ
     - in each row the elements are separated by blanks.
 
 **Example:**
-D 3
-0 1 0
-1 0 0
-0 0 0
+D 3\n
+0 1 0\n
+1 0 0\n
+0 0 0\n
 
 
 ## Test.py
@@ -28,13 +28,13 @@ D 3
 
 * Instantiates list of Graph objects read from a file. (*Superclass for Euler*)
 
-## Eueler.py
+## Euler.py
 
 * Euler objects are Graph objects that contain Euler Circuits
- - They are guaranteed to be connected and all their vertices have even degree
+    - They are guaranteed to be connected and all their vertices have even degree
 
 ## Walk.py
 
 * Walk objects can be used to build walks from Graphs.
- - A Walk is simply a list of vertices in the order in which they occur in the walk.
- - The edges are not listed.
+    - A Walk is simply a list of vertices in the order in which they occur in the walk.
+    - The edges are not listed.
