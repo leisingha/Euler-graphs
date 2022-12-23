@@ -7,41 +7,24 @@ def main():
   Main test program calculates score for program.
   Hierholzer's algorithm is tested on graphs in test files
   """
-  dirPath = "/Users/leisingha/Github/Euler-graphs"
+  dirPath = "/Users/leisingha/Github/Euler-graphs" 
   score = 0
   
   # Run test files to check correctness
   print("\n=======================  TEST CORRECTNESS  =======================\n")
   
-  score += testInput(dirPath + "small", 6)
+  score += testInput(dirPath + "/small", 6)
   print("Score so far: " + str(score))
   
-  score += testInput(dirPath + "medium", 5)
+  score += testInput(dirPath + "/medium", 5)
   print("Score so far: " + str(score))
  
-  score += testInput(dirPath + "large", 6)
+  score += testInput(dirPath + "/large", 6)
   print("Score so far: " + str(score))
   
-  score += 3*testInput(dirPath + "verylarge", 1)
+  score += 3*testInput(dirPath + "/verylarge", 1)
   print("Correctness score: " + str(score) + " out of 20.")
 
-  # Test very large graphs
-  print("\n=======================  TEST EFFICIENCY   =======================\n")
-
-  score += 2*testInput(dirPath + "huge1", 1)
-  print("Score so far: " + str(score) + " out of 30.")
-
-  score += 2*testInput(dirPath + "huge2", 1)
-  print("Score so far: " + str(score) + " out of 30.")
-
-  score += 2*testInput(dirPath + "huge3", 1)
-  print("Score so far: " + str(score) + " out of 30.")
-
-  score += 2*testInput(dirPath + "huge4", 1)
-  print("Score so far: " + str(score) + " out of 30.")
-
-  score += 2*testInput(dirPath + "huge5", 1)
-  print("Final score: " + str(score) + " out of 30.")
  
 
 def testInput(filename, expected):
