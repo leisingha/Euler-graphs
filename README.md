@@ -9,5 +9,5 @@ The program instantitates graph objects from simple text files that contain dire
     - "D" or "U" to specify whether the graph is directed or undirected
     - The number of vertices in that graph
 * Followed by one line for each row of the adjacency matrix of the graph: 
-    -in each row the elements are separated by blanks.
+    - in each row the elements are separated by blanks.
 
