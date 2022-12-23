@@ -7,6 +7,7 @@ The program instantitates graph objects from simple text files that contain dire
 
 The program prompts the user for a commandline input for a filename which includes the adjacency matrix representation of the graph.(*make sure the input files are in the same folder as Test.py*)
 
+
 * Each graph starts on a new line which contains two elements: 
     - "D" or "U" to specify whether the graph is directed or undirected
     - The number of vertices in that graph
