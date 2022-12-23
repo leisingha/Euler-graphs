@@ -11,3 +11,6 @@ The program instantitates graph objects from simple text files that contain dire
 * Followed by one line for each row of the adjacency matrix of the graph: 
     - in each row the elements are separated by blanks.
 
+## Test.py
+
+* Does the actual Testing 🧪
