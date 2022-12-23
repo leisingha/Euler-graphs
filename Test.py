@@ -7,7 +7,7 @@ def main():
   Main test program calculates score for program.
   Hierholzer's algorithm is tested on graphs in test files
   """
-  dirPath = "/home/cps420/public_html/doc/W22/A3/Tests/"
+  dirPath = "/Users/leisingha/Github/Euler-graphs"
   score = 0
   
   # Run test files to check correctness
