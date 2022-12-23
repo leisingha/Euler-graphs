@@ -1,33 +1,31 @@
 from Graph import Graph
 from Euler import Euler
 from Walk import Walk
+import os
 
 def main():
   """
-  Main test program calculates score for program.
+  Main test program checks for a Euler circuit in a graph object.
   Hierholzer's algorithm is tested on graphs in test files
   """
-  dirPath = "/Users/leisingha/Github/Euler-graphs" 
-  score = 0
+  #dirPath = "/Users/leisingha/Github/Euler-graphs" #Using absolute path for my local repo 😝
   
-  # Run test files to check correctness
-  print("\n=======================  TEST CORRECTNESS  =======================\n")
+  current_directory = os.getcwd()
+
+  inputfile = str(input("Enter file name:\n "))
+
+  inputfile = "/" + inputfile
   
-  score += testInput(dirPath + "/small", 6)
-  print("Score so far: " + str(score))
+  # Run test files to check for Euler Circuits
+  print("\n=======================  RESULT  =======================\n")
   
-  score += testInput(dirPath + "/medium", 5)
-  print("Score so far: " + str(score))
- 
-  score += testInput(dirPath + "/large", 6)
-  print("Score so far: " + str(score))
+  testInput(current_directory + inputfile)
   
-  score += 3*testInput(dirPath + "/verylarge", 1)
-  print("Correctness score: " + str(score) + " out of 20.")
+  print("~ End of Program ~")
 
  
 
-def testInput(filename, expected):
+def testInput(filename):
   """
   Reads graphs from a file and tests the getEuler method on these graphs.
   
@@ -42,7 +40,7 @@ def testInput(filename, expected):
   graphList = Euler.fromFile(filename)
   for graph in graphList:
     found += testOnGraph(graph)
-  print("Euler circuits expected: " + str(expected) + ", found: " + str(found))
+  print("Euler circuits " + "found: " + str(found))
   return found
   
 def testOnGraph(graph):
